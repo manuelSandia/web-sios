@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
         // Header
         titulo: 'Sios Asesores',
         swipTitle1: 'Sistemas Profit Plus',
-        swipDesc1: 'Es la solución de gestión administrativa que ofrece soporte a los procesos de negocio de su organización de forma integral, sencilla y flexible en la área de invetntario, compras, ventas, importaciones y tesorería, potenciando el funcionamiento de su negocio.',
+        swipDesc1: 'Es la solución de gestión administrativa para potenciar el funcionamiento de su negocio.',
         swipButt1: 'Saber Mas',
         swipTitle2: 'Sistema Sigesp Enterprise',
         swipDesc2: 'Simplifique los procesos de gestión administrativa en las organizaciones del sector público venezolano.',
