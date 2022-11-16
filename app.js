@@ -3,9 +3,9 @@ const hbs = require('hbs');
 const express = require('express');
 const res = require('express/lib/response');
 const path = require('path');
-const Swal = require('sweetalert2');
 const app = express();
 const port = process.env.PORT;
+
 
 
 // Handlebars
@@ -37,6 +37,8 @@ app.get('/', (req, res) => {
  
     });
 });
+
+
 
 
 app.listen(port, () => {

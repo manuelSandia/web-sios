@@ -1,7 +1,7 @@
 const { Router }= require('express');
 const router = Router();
 const nodemailer = require('nodemailer');
-const Swal = require('sweetalert2');
+
 
 router.post('/send-mail', async(req, res) =>{
     const { name, email, phone, message } = req.body;
@@ -34,16 +34,6 @@ router.post('/send-mail', async(req, res) =>{
     });
 
     console.log('mensaje enviado', info.messageId);
-       
-    Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Su mensaje ha sido enviado',
-        showConfirmButton: false,
-        timer: 1500
-    });
-
-    res.redirect('/');
     
 });
 
