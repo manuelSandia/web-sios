@@ -1,15 +1,15 @@
 <section class="section section-sm section-fluid bg-default text-center" id="profit">
     <div class="container-fluid">
-        <h2 class="wow fadeInLeft">Sistemas Profit Plus</h2>
-        <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">Es la solución de gestión administrativa que ofrece soporte a los procesos de negocio de su organización de forma integral, sencilla y flexible en la área de invetntario, compras, ventas, importaciones y tesorería, potenciando el funcionamiento de su negocio.</p>
+        <h2 class="wow fadeInLeft">{{profitTitle}}</h2>
+        <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">{{profitDesc}}</p>
         <div class="isotope-filters isotope-filters-horizontal">
         <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-5" data-custom-toggle-hide-on-blur="true" data-custom-toggle-disable-on-blur="true"><span class="icon fa fa-caret-down"></span>Sistemas</button>
         <ul class="isotope-filters-list" id="isotope-5">
             {{!-- <li><a href="#" data-isotope-filter="*" data-isotope-group="gallery"></a></li> --}}
-            <li><a class="active" href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">Administrativo 2k8 / 2k12</a></li>
-            <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">Contabilidad 2k8 / 2k12</a></li>
-            <li><a href="#" data-isotope-filter="Type 3" data-isotope-group="gallery">Nomina 2k8 / 2k12</a></li>
-            <li><a href="#" data-isotope-filter="Type 4" data-isotope-group="gallery">Produccion 2k8</a></li>
+            <li><a class="active" href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">{{proSecTitle1}}</a></li>
+            <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">{{proSecTitle2}}</a></li>
+            <li><a href="#" data-isotope-filter="Type 3" data-isotope-group="gallery">{{proSecTitle3}}</a></li>
+            <li><a href="#" data-isotope-filter="Type 4" data-isotope-group="gallery">{{proSecTitle4}}</a></li>
         </ul>
         </div>
         <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
@@ -20,9 +20,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-1-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">Acerca del Sistema</h5>
+                <h5 class="thumbnail-classic-title">{{proProdTitle1}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">Facilita automatizar la producción y sus procesos operativos, permitiendo una visión global de los mismos, lo cual significa disponibilidad de información para la toma de decisiones en el momento oportuno, aumentando la competitividad de la empresa.</p>
+                <p class="thumbnail-classic-text">{{proProdDesc1}}</p>
             </div>
             </article>
         </div>
@@ -33,9 +33,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">Acerca del Sistema</h5>
+                <h5 class="thumbnail-classic-title">{{proAdmTitle1}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">Es la solución de gestión administrativa que ofrece soporte a los procesos de negocio de su organización de forma integral, sencilla y flexible. Maneja áreas como: Inventario, Compras, Ventas, Cuentas por Cobrar, Cuentas por Pagar, Caja y Banco.</p>
+                <p class="thumbnail-classic-text">{{proAdmDesc1}}</p>
             </div>
             </article>
         </div>
@@ -46,9 +46,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">Confiabilidad</h5>
+                <h5 class="thumbnail-classic-title">{{proAdmTitle2}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">Permite dar una visión global de su negocio, lo cual significa disponibilidad de información para la toma de decisiones en el momento oportuno.</p>
+                <p class="thumbnail-classic-text">{{proAdmDesc2}}</p>
             </div>
             </article>
         </div>
@@ -59,9 +59,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">Versatilidad</h5>
+                <h5 class="thumbnail-classic-title">{{proAdmTitle3}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">Es multi-empresa, multi-almacen, multi-moneda, y multi-idioma. Tiene toda la información en línea, no necesita cierres mensuales.</p>
+                <p class="thumbnail-classic-text">{{proAdmDesc3}}</p>
             </div>
             </article>
         </div>
@@ -72,10 +72,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-3-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">Acerca del Sistema</h5>
+                <h5 class="thumbnail-classic-title">{{proContTitle1}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">
-                Automatice su gestión contable General, Financiera y Fiscal de forma integral con comprobantes contables (manuales y automáticos) en base a los documentos almacenados en Profit Plus Administrativo y Nomina.</p>
+                <p class="thumbnail-classic-text">{{proContDesc1}}</p>
             </div>
             </article>
         </div>
@@ -86,9 +85,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-4-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">Acerca del sistema</h5>
+                <h5 class="thumbnail-classic-title">{{proNomTitle1}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">La herramienta más avanzada para el manejo del Capital Humano. Usted podrá configurar y calcular la nómina para los diversos contratos, así como llevar un control en las áreas de préstamos, vacaciones y liquidaciones.</p>
+                <p class="thumbnail-classic-text">{{proNomDesc1}}</p>
             </div>
             </article>
         </div>
@@ -99,9 +98,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-5-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">Abierto y flexible</h5>
+                <h5 class="thumbnail-classic-title">{{proNomTitle2}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">Permite crear y aplicar cualquier concepto relacionado con el pago a los trabajadores, así como conceptos que pueda ir acumulando para su pago posterior (prestaciones sociales, intereses sobre prestaciones etc.).</p>
+                <p class="thumbnail-classic-text">{{proNomDesc2}}</p>
             </div>
             </article>
         </div>
@@ -112,9 +111,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-6-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">Maneja  de forma inteligente sus transacciones</h5>
+                <h5 class="thumbnail-classic-title">{{proContTitle3}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">Gestión de activos fijos y pasivos realizables de la empresa. Ajustes por inflación fiscal y financiero.</p>
+                <p class="thumbnail-classic-text">{{proContDesc3}}</p>
             </div>
             </article>
         </div>
@@ -125,9 +124,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-7-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">sólidas capacidades de generación de reportes</h5>
+                <h5 class="thumbnail-classic-title">{{proContTitle2}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">Reportes diseñados en base a los requerimientos exigidos por la ley para los procesos contables los cuales son almacenados y visualizados en: Excel, Word, PDF, Formatos RTF y Crystal Reports).</p>
+                <p class="thumbnail-classic-text">{{proContDesc2}}</p>
             </div>
             </article>
         </div>
@@ -138,9 +137,9 @@
             </div>
             <div class="thumbnail-classic-caption">
                 <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-monitor74" href="#profit"><img src="images/fullwidth-gallery-8-420x350.jpg" alt="" width="420" height="350"/></a>
-                <h5 class="thumbnail-classic-title">Ajustado a las leyes Actuales</h5>
+                <h5 class="thumbnail-classic-title">{{proNomTitle3}}</h5>
                 </div>
-                <p class="thumbnail-classic-text">Cumple con los lineamientos de la nueva Ley Orgánica del trabajo, los trabajadores y trabajadoras</p>
+                <p class="thumbnail-classic-text">{{proNomDesc3}}</p>
             </div>
             </article>
         </div>

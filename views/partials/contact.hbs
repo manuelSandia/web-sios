@@ -2,10 +2,10 @@
     <div class="container">
         <article class="title-classic">
         <div class="title-classic-title">
-            <h3>¡Contactanos!</h3>
+            <h3>{{contactFormTitle}}</h3>
         </div>
         <div class="title-classic-text">
-            <p>Si tienes alguna pregunta, solo rellena el formulario de contacto, y te respoderemos en la brevedad posible.</p>
+            <p>{{contactFormDesc}}</p>
         </div>
         </article>
         <form id="formulario" class="rd-form rd-form-variant-2" data-form-output="form-output-global" data-form-type="contact" method="POST" action="/send-mail">
@@ -35,7 +35,7 @@
             </div>
             </div>
         </div>
-        <button class="button button-primary button-pipaluk" type="submit" id="btnEnviar">Enviar</button>
+        <button class="button button-primary button-pipaluk" type="submit" id="btnEnviar">{{contactFormButt}}</button>
         </form>
     </div>
 </section>
