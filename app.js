@@ -7,7 +7,6 @@ const app = express();
 const port = process.env.PORT;
 
 
-
 // Handlebars
 app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials'); 
@@ -274,7 +273,11 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('*', (req, res)=>{
+    res.sendFile(__dirname + '/public/404.html');
+});
+
 
 app.listen(port, () => {
     console.log(`app listening on port ${port}`)
-  })
+});

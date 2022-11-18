@@ -1,6 +1,9 @@
 const { Router }= require('express');
 const router = Router();
 const nodemailer = require('nodemailer');
+const userEmail = process.env.USERMAIL;
+const userHost = process.env.HOST;
+const clave = process.env.GOOGLE_KEY;
 
 
 router.post('/send-mail', async(req, res) =>{
@@ -17,12 +20,12 @@ router.post('/send-mail', async(req, res) =>{
         <p>${message}</p>
     `
     const transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
+        host: userHost,
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: 'sandiamanuel@gmail.com', // generated ethereal user
-          pass: 'ztjuhekiqbdfykio',
+          user: userEmail, // generated ethereal user
+          pass: clave,
         }  
     });
 
@@ -36,8 +39,6 @@ router.post('/send-mail', async(req, res) =>{
     console.log('mensaje enviado', info.messageId);
     
 });
-
-
 
 
 module.exports = router;
