@@ -1,0 +1,78 @@
+.container-grid{
+    background: rgb(167,166,166);
+    background: linear-gradient(0deg, rgba(167,166,166,0.9332107843137255) 0%, rgba(231,228,223,0.8015581232492998) 30%);
+    display: grid;
+    height:  100vh;
+    grid-template-columns: 220px 1fr 1fr 1fr;
+    grid-template-rows:    repeat(4, 1fr);
+    grid-template-areas:
+      "img img tit tit"
+      "img img con con"
+      "img img con con"
+      "sir sir ico ico";
+}
+  
+.grid-item1 { 
+    grid-area:  img;
+    align-self: end; 
+    //justify-self: center;
+}
+.grid-item2 { 
+    grid-area:  tit;
+    text-align: left; 
+    align-self: end;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.grid-item3 { 
+    grid-area:  con;
+    text-align: justify;
+    margin-right: 10px;
+    justify-self: start;
+    align-self:   satrt; 
+    text-color: white;
+}
+.grid-item4 { 
+    grid-area:  sir; 
+    align-self: center;
+}
+.grid-item5 { 
+    grid-area:  ico; 
+    align-self: center;
+}
+  
+.container-grid > div{
+    object-fit: cover;
+}
+
+#carouselExampleSlidesOnly{
+    width:80%;
+    height:80%;
+    margin-left:30px;
+}
+ 
+#icon1{
+    align-self:   end; 
+    text-align: start;
+}
+
+#icon2{
+    align-self:   center; 
+    text-align: center;
+    margin-top: -99px;
+}
+
+#icon3{
+    align-self:   end; 
+    text-align: end;
+    margin-top: -99px;
+    margin-right: 30px;
+}
+#botonimp{
+    align-self: start;
+    justify-self: start;
+    margin-left: -90px;
+    //margin-top: -60px;
+}
+#banner{
+    margin-top:-30px;
+}

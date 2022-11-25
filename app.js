@@ -148,7 +148,7 @@ app.get('/', (req, res) => {
         disTransTitle1: 'iSmart-W',
         disTransDesc1:  'Es un dispositivo electrónico, que se conecta a una máquina fiscal, permitiendo extraer los reportes Z contenidos en la memoria fiscal y transmitirlos a el servidor  del Sistema Centralizado de Facturación Electrónica.',
 
-        disTransTitle2: 'iSmart',
+        disTransTitle2: 'iSmart-G',
         disTransDesc2:  'Es un dispositivo electrónico, que se conecta a una máquina fiscal, permitiendo extraer los reportes Z contenidos en la memoria fiscal y transmitirlos a el servidor  del Sistema Centralizado de Facturación Electrónica.',
 
         disTransTitle3: 'iMobile',
@@ -269,6 +269,165 @@ app.get('/', (req, res) => {
         contactFormTitle: '¡Contactanos!',
         contactFormDesc:  'Si tienes alguna pregunta, solo rellena el formulario de contacto, y te respoderemos en la brevedad posible.',
         contactFormButt:  'Enviar',
+
+    });
+});
+
+app.get('/dt1140', (req, res) => { 
+    res.render('mFiscales', {
+
+        titulo:'Dascom Tally TD1140',
+        
+        contenido1: 'La DASCOM Tally 1140, es una Impresora Fiscal fabricada bajo estrictos estándares de calidad, que dan a su moderno diseño, la seguridad y la robustez necesaria para cumplir con las normativas fiscales vigentes en el país.',
+        contenido2: 'Es un equipo diseñado y adaptado a las nuevas exigencias tecnológicas, lo cual brinda una mayor facilidad de manejo y programación.',
+        contenido3: 'Esta impresora se ajusta a las regulaciones de ley establecidas por el SENIAT para máquinas fiscales bajo la providencia SENIAT/GF/00064 de fecha 17 febrero del 2016.',
+        img1: 'images/imp/dascon1.png',
+        img2: 'images/imp/dascon2.png',
+        img3: 'images/imp/dascon3.png',
+
+        icono1:    'images/icons/icon-1.png',
+        icondesc1: 'Ferreterias',
+        icono2:    'images/icons/icon-2.png',
+        icondesc2: 'Clinicas',
+        icono3:    'images/icons/icon-3.png',
+        icondesc3: 'Hoteles',
+        
+    });
+});
+
+app.get('/hka80', (req, res)=>{
+    res.render('mFiscales',{
+
+        titulo: 'Fiscat HKA80',
+        
+        contenido1: 'La Impresora Fiscal HKA80 se caracteriza por su alta rapidez de impresión de tickets, cuenta con un diseño robusto y seguro cumpliendo así las normativas fiscales del país. La impresora posee un cortador automático de papel, impresión de códigos de barra en 1D y 2D, comunicación vía Serial o USB tipo B para la PC, puerto para Gaveta y Display externo. Por último, su sistema integrado Anti-Tamper es capaz de detectar al momento que se abre el equipo y graba esa información en la memoria de auditoria, garantizando la seguridad y robustez que se requiere en una máquina fiscal.',
+        contenido2: 'Diseño compacto y elegante, mayor rapidez de comunicación y altas prestaciones en rendimiento.',
+        contenido3: 'Esta impresora se ajusta a las regulaciones de ley establecidas por el SENIAT para máquinas fiscales bajo la providencia SENIAT/GF/00064 de fecha 17 febrero del 2016',
+        img1: 'images/imp/hka1.png',
+        img2: 'images/imp/hka2.png',
+        img3: 'images/imp/hka3.png',
+
+        icono1:    'images/icons/icon-5.png',
+        icondesc1: 'Cafeterias',
+        icono2:    'images/icons/icon-6.png',
+        icondesc2: 'Supermercados',
+        icono3:    'images/icons/icon-8.png',
+        icondesc3: 'Farmacias',
+    });
+});
+
+app.get('/pp9plus',(req, res)=>{
+    res.render('mFiscales',{
+
+        titulo: 'Aclas PP9-PLUS',
+        
+        contenido1: 'La impresora fiscal PP9-PLUS es un equipo de impresión térmica ideal para pequeños y medianos negocios debido a su competitivo precio y a su diseño compacto, que garantiza la comodidad de los usuarios y facilita las transacciones fiscales.',
+        contenido2: 'Como destacada ventaja competitiva, esta impresora posee una solución integrada de comunicación que transmite los datos contenidos en la memoria fiscal vía WiFi; además tiene la opción de conexión inalámbrica Bluetooth  para la comunicación con sistemas de facturación, mayor velocidad de impresión y una batería interna de respaldo, en caso de fallas del suministro eléctrico.',
+        contenido3: 'Este equipo cumple con las regulaciones de ley establecidas por el SENIAT para máquinas fiscales bajo la Providencia Administrativa N° SNAT/2018/0141 de fecha 16 de Octubre 2018.',
+        img1: 'images/imp/aclas1.png',
+        img2: 'images/imp/aclas2.png',
+        img3: 'images/imp/aclas3.png',
+
+        icono1:    'images/icons/icon-9.png',
+        icondesc1: 'Heladeria',
+        icono2:    'images/icons/icon-11.png',
+        icondesc2: 'Boutique',
+        icono3:    'images/icons/icon-13.png',
+        icondesc3: 'Tiendas',
+
+    });
+});
+
+app.get('/cr2050', (req, res)=>{
+    res.render('mFiscales',{
+
+        titulo: 'Caja Registradora CR2050',
+        
+        contenido1: 'Es una caja registradora fiscal térmica, portatil, ideal para medianas y pequeñas empresas con una arquitectura de diseño ampliamente reducida lo que la hace compacta y ligera para adaptarse a sus necesidades.',
+        contenido2: 'Esta caja registradora cumple con las regulaciones de ley establecidas por el SENIAT para máquinas fiscales bajo la Providencia Administrativas Nº SNAT/2018/0141 de fecha 6 de Noviembre 2018.',
+        contenido3: '',
+        img1: 'images/imp/cr-1.png',
+        img2: 'images/imp/cr-2.png',
+        img3: 'images/imp/cr-3.png',
+
+        icono1:    'images/icons/icon-9.png',
+        icondesc1: 'Heladeria',
+        icono2:    'images/icons/icon-14.png',
+        icondesc2: 'Transpote / Delivery',
+        icono3:    'images/icons/icon-13.png',
+        icondesc3: 'Tiendas',
+
+    }); 
+});
+
+app.get('/ismartg', (req, res)=>{ 
+    res.render('dTrans', {
+
+        titulo: 'Dispositivo de Transmision iSmart-G',
+        
+        contenido1: 'Es un dispositivo electrónico, que se conecta a una máquina fiscal, permitiendo extraer los reportes Z contenidos en la memoria fiscal y transmitirlos a el servidor  del Sistema Centralizado de Facturación Electrónica.',
+        contenido2: 'Él está conformado por un hardware y un software que al conectarse entre el sistema de facturación y una máquina fiscal a través del puerto serial, permite hacer la lectura de los datos contenidos en la memoria de trabajo, memoria fiscal y memoria de auditoria, generando un archivo con la información leída o extraída para luego enviarla vía internet a el servidor del Sistema Centralizado de Facturación Electrónica.',
+        contenido3: '',
+        img1: 'images/imp/ismart.png',
+        img2: 'images/imp/ismart.png',
+        img3: 'images/imp/ismart.png',
+
+        icono1:    'images/imp/hka3.png',
+        icondesc1: 'Fiscat HKA80',
+        icono2:    'images/imp/dascon3.png',
+        icondesc2: 'Tally Dascom 1140',
+        icono3:    'images/imp/bixolon-1.png',
+        icondesc3: 'Bixolon',
+
+        banner:'images/imp/bannerdt-4.png',
+
+    });
+});
+
+app.get('/ismartw', (req, res)=>{
+    res.render('dTrans', {
+
+        titulo: 'Dispositivo de Transmision iSmart-W',
+        
+        contenido1: 'Es un dispositivo electrónico, que se conecta a una máquina fiscal, permitiendo extraer los reportes Z contenidos en la memoria fiscal y transmitirlos a el servidor  del Sistema Centralizado de Facturación Electrónica.',
+        contenido2: 'Él está conformado por un hardware y un software que al conectarse entre el sistema de facturación y una máquina fiscal a través del puerto serial, permite hacer la lectura de los datos contenidos en la memoria de trabajo, memoria fiscal y memoria de auditoria, generando un archivo con la información leída o extraída para luego enviarla vía internet a el servidor del Sistema Centralizado de Facturación Electrónica.',
+        contenido3: '',
+        img1: 'images/imp/ismartw.png',
+        img2: 'images/imp/ismart-2.png',
+        img3: 'images/imp/ismartw.png',
+
+        icono1:    'images/imp/hka3.png',
+        icondesc1: 'Fiscat HKA80',
+        icono2:    'images/imp/dascon3.png',
+        icondesc2: 'Tally Dascom 1140',
+        icono3:    'images/imp/bixolon-1.png',
+        icondesc3: 'Bixolon SRP-812',
+
+        banner:'images/imp/bannerdt-5.png',
+
+    });
+});
+
+app.get('/imobile', (req, res)=>{
+    res.render('dTrans', {
+
+        titulo: 'Dispositivo de Transmision iMobile',
+        
+        contenido1: 'Es un dispositivo electrónico, que se conecta a una máquina fiscal, permitiendo extraer los reportes Z contenidos en la memoria fiscal y transmitirlos a el servidor  del Sistema Centralizado de Facturación Electrónica.',
+        contenido2: 'Él está conformado por un hardware y un software que al conectarse entre el sistema de facturación y una máquina fiscal a través del puerto serial, permite hacer la lectura de los datos contenidos en la memoria de trabajo, memoria fiscal y memoria de auditoria, generando un archivo con la información leída o extraída para luego enviarla vía internet a el servidor del Sistema Centralizado de Facturación Electrónica.',
+        contenido3: '',
+        img1: 'images/imp/dthka.png',
+        img2: 'images/imp/dthka-2.png',
+        img3: 'images/imp/dthka-1.png',
+
+        icono1:    'images/imp/hka3.png',
+        icondesc1: 'Fiscat HKA80',
+        icono2:    'images/imp/dascon3.png',
+        icondesc2: 'Tally Dascom 1140',
+        icono3:    'images/imp/bixolon-1.png',
+        icondesc3: 'Bixolon SRP-812',
+
+        banner:'images/imp/bannerdt-3.png',
 
     });
 });

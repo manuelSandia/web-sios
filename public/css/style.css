@@ -41,10 +41,19 @@ blockquote {
 	#cont2 {
 		display: none;
 	}
-	/* #img1{
-		height:117px;
-		width:270px;
-	{ */
+	
+}
+
+@media screen and (min-width: 1600px) {
+	#inicio{
+		width:100%;
+	}
+	#pagination{
+		display: none;
+	}
+	#lineapag{
+		display: none;
+	}
 }
 
 
