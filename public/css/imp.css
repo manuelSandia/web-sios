@@ -30,6 +30,8 @@
     justify-self: start;
     align-self:   satrt; 
     text-color: white;
+    word-break: break-all;
+    overflow-y: scroll;
 }
 .grid-item4 { 
     grid-area:  sir; 
@@ -75,4 +77,44 @@
 }
 #banner{
     margin-top:-30px;
+}
+
+@media screen and (max-width: 450px) {
+    body{
+        height: 100%;
+    }
+	.container-grid{
+        background: rgb(167,166,166);
+        background: linear-gradient(0deg, rgba(167,166,166,0.9332107843137255) 0%, rgba(231,228,223,0.8015581232492998) 30%);
+        display: grid;
+        height:  130vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:    repeat(6, 1fr);
+        grid-template-areas:
+          "tit"
+          "img"
+          "con"
+          "con"
+          "ico"
+          "sir";
+    }
+
+    .grid-item5{
+        margin-top: 60px;
+    }
+    .grid-item2{
+        align-self: center; 
+        text-align: center;
+    }
+
+    #banner{
+        margin-top:100px;
+    }
+
+    #botonimp{
+        align-self: center;
+        justify-self: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
 }

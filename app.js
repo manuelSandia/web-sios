@@ -26,6 +26,15 @@ app.get('/', (req, res) => {
         // Header
         titulo: 'Sios Asesores',
 
+        //ENLACES
+        inicio:    '#inicio', 
+        servicios: '#services',
+        profit:    '#profit',
+        sigesp:    '#sigesp',
+        nosotros:  '#nosotros',
+        contacto:  '#contacts',
+
+
         swipTitle1: 'Sistemas Profit Plus',
         swipDesc1:  'Es la solución de gestión administrativa para potenciar el funcionamiento de su negocio.',
         swipButt1:  'Saber Mas',
@@ -276,6 +285,13 @@ app.get('/', (req, res) => {
 app.get('/dt1140', (req, res) => { 
     res.render('mFiscales', {
 
+        inicio:    '/#inicio', 
+        servicios: '/#services',
+        profit:    '/#profit',
+        sigesp:    '/#sigesp',
+        nosotros:  '/#nosotros',
+        contacto:  '/#contacts',
+
         titulo:'Dascom Tally TD1140',
         
         contenido1: 'La DASCOM Tally 1140, es una Impresora Fiscal fabricada bajo estrictos estándares de calidad, que dan a su moderno diseño, la seguridad y la robustez necesaria para cumplir con las normativas fiscales vigentes en el país.',
@@ -298,6 +314,13 @@ app.get('/dt1140', (req, res) => {
 app.get('/hka80', (req, res)=>{
     res.render('mFiscales',{
 
+        inicio:    '/#inicio', 
+        servicios: '/#services',
+        profit:    '/#profit',
+        sigesp:    '/#sigesp',
+        nosotros:  '/#nosotros',
+        contacto:  '/#contacts',
+
         titulo: 'Fiscat HKA80',
         
         contenido1: 'La Impresora Fiscal HKA80 se caracteriza por su alta rapidez de impresión de tickets, cuenta con un diseño robusto y seguro cumpliendo así las normativas fiscales del país. La impresora posee un cortador automático de papel, impresión de códigos de barra en 1D y 2D, comunicación vía Serial o USB tipo B para la PC, puerto para Gaveta y Display externo. Por último, su sistema integrado Anti-Tamper es capaz de detectar al momento que se abre el equipo y graba esa información en la memoria de auditoria, garantizando la seguridad y robustez que se requiere en una máquina fiscal.',
@@ -318,6 +341,13 @@ app.get('/hka80', (req, res)=>{
 
 app.get('/pp9plus',(req, res)=>{
     res.render('mFiscales',{
+
+        inicio:    '/#inicio', 
+        servicios: '/#services',
+        profit:    '/#profit',
+        sigesp:    '/#sigesp',
+        nosotros:  '/#nosotros',
+        contacto:  '/#contacts',
 
         titulo: 'Aclas PP9-PLUS',
         
@@ -341,6 +371,13 @@ app.get('/pp9plus',(req, res)=>{
 app.get('/cr2050', (req, res)=>{
     res.render('mFiscales',{
 
+        inicio:    '/#inicio', 
+        servicios: '/#services',
+        profit:    '/#profit',
+        sigesp:    '/#sigesp',
+        nosotros:  '/#nosotros',
+        contacto:  '/#contacts',
+
         titulo: 'Caja Registradora CR2050',
         
         contenido1: 'Es una caja registradora fiscal térmica, portatil, ideal para medianas y pequeñas empresas con una arquitectura de diseño ampliamente reducida lo que la hace compacta y ligera para adaptarse a sus necesidades.',
@@ -362,6 +399,13 @@ app.get('/cr2050', (req, res)=>{
 
 app.get('/ismartg', (req, res)=>{ 
     res.render('dTrans', {
+
+        inicio:    '/#inicio', 
+        servicios: '/#services',
+        profit:    '/#profit',
+        sigesp:    '/#sigesp',
+        nosotros:  '/#nosotros',
+        contacto:  '/#contacts',
 
         titulo: 'Dispositivo de Transmision iSmart-G',
         
@@ -387,6 +431,13 @@ app.get('/ismartg', (req, res)=>{
 app.get('/ismartw', (req, res)=>{
     res.render('dTrans', {
 
+        inicio:    '/#inicio', 
+        servicios: '/#services',
+        profit:    '/#profit',
+        sigesp:    '/#sigesp',
+        nosotros:  '/#nosotros',
+        contacto:  '/#contacts',
+
         titulo: 'Dispositivo de Transmision iSmart-W',
         
         contenido1: 'Es un dispositivo electrónico, que se conecta a una máquina fiscal, permitiendo extraer los reportes Z contenidos en la memoria fiscal y transmitirlos a el servidor  del Sistema Centralizado de Facturación Electrónica.',
@@ -410,6 +461,13 @@ app.get('/ismartw', (req, res)=>{
 
 app.get('/imobile', (req, res)=>{
     res.render('dTrans', {
+
+        inicio:    '/#inicio', 
+        servicios: '/#services',
+        profit:    '/#profit',
+        sigesp:    '/#sigesp',
+        nosotros:  '/#nosotros',
+        contacto:  '/#contacts',
 
         titulo: 'Dispositivo de Transmision iMobile',
         
